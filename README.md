@@ -17,7 +17,7 @@ $ npm install -g rag-svc-cli
 $ rag-svc-cli COMMAND
 running command...
 $ rag-svc-cli (--version)
-rag-svc-cli/0.0.0 linux-x64 node-v24.4.0
+rag-svc-cli/0.1.0 linux-x64 node-v24.4.0
 $ rag-svc-cli --help [COMMAND]
 USAGE
   $ rag-svc-cli COMMAND
@@ -26,6 +26,8 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
+* [`rag-svc-cli embed TEXT`](#rag-svc-cli-embed-text)
+* [`rag-svc-cli generate TEXT`](#rag-svc-cli-generate-text)
 * [`rag-svc-cli help [COMMAND]`](#rag-svc-cli-help-command)
 * [`rag-svc-cli plugins`](#rag-svc-cli-plugins)
 * [`rag-svc-cli plugins add PLUGIN`](#rag-svc-cli-plugins-add-plugin)
@@ -37,6 +39,52 @@ USAGE
 * [`rag-svc-cli plugins uninstall [PLUGIN]`](#rag-svc-cli-plugins-uninstall-plugin)
 * [`rag-svc-cli plugins unlink [PLUGIN]`](#rag-svc-cli-plugins-unlink-plugin)
 * [`rag-svc-cli plugins update`](#rag-svc-cli-plugins-update)
+
+## `rag-svc-cli embed TEXT`
+
+Execute RPC commands
+
+```
+USAGE
+  $ rag-svc-cli embed TEXT -c <value> -t <value> [-k <value>] [-u <value>]
+
+ARGUMENTS
+  TEXT  Prompt text
+
+FLAGS
+  -c, --collection=<value>  (required) Collection name
+  -k, --key=<value>         RPC API key
+  -t, --title=<value>       (required) Chunk title
+  -u, --url=<value>         RPC base url
+
+DESCRIPTION
+  Execute RPC commands
+
+EXAMPLES
+  $ rag-svc-cli embed
+```
+
+## `rag-svc-cli generate TEXT`
+
+Generate LLM output
+
+```
+USAGE
+  $ rag-svc-cli generate TEXT [-k <value>] [-u <value>]
+
+ARGUMENTS
+  TEXT  Prompt text
+
+FLAGS
+  -k, --key=<value>  RPC API key
+  -u, --url=<value>  RPC base url
+
+DESCRIPTION
+  Generate LLM output
+
+EXAMPLES
+  $ rag-svc-cli generate
+```
 
 ## `rag-svc-cli help [COMMAND]`
 

@@ -1,7 +1,7 @@
 {
   "name": "rag-svc-cli",
   "description": "A new CLI generated with oclif",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "author": "JB",
   "bin": {
     "rag-svc-cli": "./bin/run.js"
