@@ -19,8 +19,8 @@ export default class Generate extends Command {
     const { args, flags } = await this.parse(Generate)
 
     const _client = client({
-      key: flags.key,
-      url: flags.url
+      key: flags?.key,
+      url: flags?.url
     })
 
     this.log(`Generating output...`)

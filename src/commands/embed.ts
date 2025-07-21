@@ -21,8 +21,8 @@ export default class Embed extends Command {
     const { args, flags } = await this.parse(Embed)
 
     const _client = client({
-      key: flags.key,
-      url: flags.url
+      key: flags?.key,
+      url: flags?.url
     })
 
     this.log(`Embedding startetd...`)
